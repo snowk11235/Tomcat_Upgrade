@@ -45,7 +45,7 @@ echo "all files moved successfully."
 echo "You must now modify systemd/system as root..."
 echo "do: "
 echo "cd /etc/systemd/system"
-echo "find . -type f -exec sed -i 's/tomcat-8.5.24/tomcat-8.5.51/g' {} \;"
+echo "find . -type f -exec sed -i 's/tomcat-8.5.24/tomcat-$(toward_tomcat_version)/g' {} \;"
 echo "reboot"
 
 
